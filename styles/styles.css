@@ -39,6 +39,13 @@ section:last-child {
   border-bottom: 0;
 }
 
+/* Layout */
+
+.row {
+  display: flex;
+  justify-content: flex-start;
+}
+
 /* Header */
 
 header {
@@ -116,8 +123,34 @@ input:focus {
   border: 2px solid black;
 }
 
+input[type="checkbox"],
+input[type="radio"] {
+  width: initial;
+  border: 0;
+}
+
 input[name="zip-code"] {
   width: 50%;
+}
+
+button {
+  border-radius: 6px;
+  border: 0;
+  background: #53bbb4;
+  width: 100%;
+  padding: 15px;
+  color: white;
+  font-size: 1.2em;
+}
+
+textarea {
+  border: 0;
+  border-radius: 6px;
+  width: 100%;
+  height: 100px;
+  background: #eee;
+  margin-bottom: 20px;
+  resize: none;
 }
 
 .form-select {
@@ -138,5 +171,11 @@ input[name="zip-code"] {
 /* Footer */
 
 footer {
+  padding: 15px 0;
   text-align: center;
+  font-size: 0.9em;
+}
+
+footer p {
+  color: #bbb;
 }
