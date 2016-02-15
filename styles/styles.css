@@ -190,6 +190,17 @@ input[type="radio"] {
   display: flex;
 }
 
+.input-required:after {
+  content: 'Required';
+  position: relative;
+  float: right;
+  margin-top: -46px;
+  margin-right: 15px;
+  color: #bbb;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
 input[name="zip-code"] {
   width: 50%;
 }
