@@ -20,6 +20,7 @@ body {
 
 hr {
   margin-bottom: 15px;
+  border: 1px solid #2d3944;
 }
 
 p {
@@ -250,4 +251,41 @@ footer {
 
 footer p {
   color: #bbb;
+}
+
+
+/* Desktop Styles */
+
+@media screen and (min-width: 600px) {
+  section {
+    width: 600px;
+    margin: 5px auto 0;
+  }
+
+  .flex-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .flex-row label {
+    width: 25%;
+  }
+
+  .flex-row div {
+    flex: 1;
+  }
+
+  .flex-row input {
+    flex: 1;
+    margin-bottom: 0;
+  }
+
+  .flex-row .form-select {
+    margin-bottom: 0;
+  }
+
+  .input-required:after {
+    margin-top: -32px;
+  }
 }
