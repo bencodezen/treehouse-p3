@@ -1,0 +1,142 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,700);
+
+/* Global */
+
+* {
+  box-sizing: border-box;
+  font-family: Merriweather, serif;
+}
+
+html,
+body {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+/* Elements */
+
+hr {
+  margin-bottom: 15px;
+}
+
+p {
+  color: #9a9a9a;
+}
+
+section {
+  margin: 5px 15px 0;
+  border-top: 1px solid #2d3944;
+  border-bottom: 1px solid #2d3944;
+}
+
+section:first-child {
+  border-top: 0;
+}
+
+section:last-child {
+  border-bottom: 0;
+}
+
+/* Header */
+
+header {
+  background: #2d3944;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+header h1 {
+  margin: 0;
+  padding: 30px 10px;
+  font-size: 1.2em;
+}
+
+/* Signup */
+
+.signup {
+  padding: 10px 0;
+  text-align: center;
+  border-bottom: 3px solid #2d3944;
+}
+
+.signup h2 {
+  font-size: 1.1em;
+}
+
+.signup p {
+  font-size: 0.9em;
+}
+
+/* Forms */
+
+form {
+  padding-top: 15px;
+  font-size: 0.9em;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+fieldset > p {
+  margin-top: 0;
+}
+
+legend {
+  margin-left: 0;
+  padding-bottom: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  padding-bottom: 10px;
+  color: #999;
+  font-size: 0.9em;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 15px;
+  background: #eee;
+  border: 0;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+input:focus {
+  border: 2px solid black;
+}
+
+input[name="zip-code"] {
+  width: 50%;
+}
+
+.form-select {
+  border-radius: 6px;
+  margin-bottom: 15px;
+  padding: 15px;
+  background: #eee;
+}
+
+.form-select select {
+  background: transparent;
+  border: 0;
+  font-size: 0.9em;
+  color: #bbb;
+  width: 100%;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+}
