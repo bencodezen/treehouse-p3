@@ -12,11 +12,12 @@
     </header>
     <main>
       <article>
-        <section class="signup">
-          <h2>Sign up for our newsletter</h2>
+        <div class="signup">
+          <h2>Signup for our newsletter</h2>
           <p>Get the latest news on how your code is doing right in your inbox.</p>
-        </section>
+        </div>
         <section>
+          <h3>Newsletter Signup Form</h3>
           <form>
             <fieldset class="contact-info">
               <legend>Contact Information</legend>
@@ -42,7 +43,7 @@
               </div>
               <div class="flex-row">
                 <label for="city">City</label>
-                <input id="city" name="city" type="city">
+                <input id="city" name="city" type="text">
               </div>
               <div class="flex-row">
                 <label for="state">State</label>
@@ -105,7 +106,7 @@
               </div>
               <div class="flex-row">
                 <label for="zip-code">Zip Code</label>
-                <input id="zip-code" name="zip-code" type="zip-code">
+                <input id="zip-code" name="zip-code" type="text" minlength=5 maxlength=5>
               </div>
             </fieldset>
             <hr>
@@ -124,15 +125,17 @@
                 <input class="custom-checkbox" type="checkbox" name="newsletters" id="js-news">
                 <label class="custom-checkbox-label" for="js-news">Javascript News</label>
               </div>
-              <label for="newsletter-format">Newsletter Format</label>
-              <div class="row">
-                <input class="custom-radio" id="html-format" name="newsletter-format" type="radio">
-                <label class="custom-radio-label" for="html-format">HTML</label>
-              </div>
-              <div class="row">
-                <input class="custom-radio" id="text-format" name="newsletter-format" type="radio">
-                <label class="custom-radio-label" for="text-format">Plain text</label>
-              </div>
+              <fieldset>
+                <legend>Newsletter Format</legend>
+                <div class="row">
+                  <input class="custom-radio" id="html-format" name="newsletter-format" type="radio">
+                  <label class="custom-radio-label" for="html-format">HTML</label>
+                </div>
+                <div class="row">
+                  <input class="custom-radio" id="text-format" name="newsletter-format" type="radio">
+                  <label class="custom-radio-label" for="text-format">Plain text</label>
+                </div>
+              </fieldset>
               <label for="other-topics">Other topics you'd like to hear about:</label>
               <textarea id="other-topics" name="other-topics"></textarea>
             </fieldset>
@@ -140,9 +143,9 @@
           </form>
         </section>
       </article>
-      <footer>
-        <p><i>Copyright The Code Review</i></p>
-      </footer>
     </main>
+    <footer>
+      <p><i>Copyright The Code Review</i></p>
+    </footer>
   </body>
 </html>
