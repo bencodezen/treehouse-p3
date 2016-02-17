@@ -123,7 +123,8 @@ input {
   font-size: 1em;
 }
 
-input:focus {
+input:focus,
+textarea:focus {
   border: 2px solid black;
 }
 
