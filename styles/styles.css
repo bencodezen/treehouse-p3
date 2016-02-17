@@ -128,6 +128,11 @@ textarea:focus {
   border: 2px solid black;
 }
 
+input::-webkit-input-placeholder {
+  text-align: right;
+  font-style: italic;
+}
+
 input[type="checkbox"],
 input[type="radio"] {
   width: initial;
@@ -205,17 +210,6 @@ input[type="radio"] {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.input-required:after {
-  content: 'Required';
-  position: relative;
-  float: right;
-  margin-top: -46px;
-  margin-right: 15px;
-  color: #bbb;
-  font-size: 0.9em;
-  font-style: italic;
 }
 
 input[name="zip-code"] {
