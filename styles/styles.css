@@ -23,10 +23,6 @@ hr {
   border: 1px solid #2d3944;
 }
 
-p {
-  color: #9a9a9a;
-}
-
 section {
   margin: 5px 15px 0;
   border-top: 1px solid #2d3944;
@@ -72,6 +68,7 @@ header h1 {
 /* Signup */
 
 .signup {
+  margin: 0 15px;
   padding: 10px 0;
   text-align: center;
   border-bottom: 3px solid #2d3944;
@@ -112,7 +109,6 @@ legend {
 label {
   display: block;
   padding-bottom: 10px;
-  color: #999;
   font-size: 0.9em;
 }
 
@@ -272,11 +268,27 @@ footer p {
   color: #bbb;
 }
 
+/* Overries */
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.normal-text {
+  font-size: 1em;
+  font-weight: normal;
+}
 
 /* Desktop Styles */
 
 @media screen and (min-width: 600px) {
-  section {
+  section,
+  .signup {
     width: 600px;
     margin: 5px auto 0;
   }
